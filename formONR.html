@@ -671,47 +671,19 @@ overflow: hidden;
         <h3>Rua Tereza Lera Paoleti, 590  •  Jardim Bela Vista  •  13.974-080  •  Itapira  •  SP  •  Tel.: (19) 3843.1996</h3>
     </div>
     </div>
-
-
-
-<script>
-    print() </${s}>
-
+    <script>function pr(){print()}
+        setTimeout(pr,500)</${s}>
 </body>
-</html>` 
+</html>` ;
          
-var novaJanela = window.open();
+let novaJanela = window.open();
 
 
-const img1 = new Image();
-const img2 = new Image();
+
 novaJanela.document.write(html);
 
 
-function executeAfterImagesLoaded() {
-    novaJanela.print()
-}
-
-
-let imagesLoaded = 0;
-function checkIfAllImagesLoaded() {
-    imagesLoaded++;
-    if (imagesLoaded === 2) {
-        executeAfterImagesLoaded();
-    }
-}
-
-
-img1.onload = checkIfAllImagesLoaded();
-img2.onload = checkIfAllImagesLoaded();
-
-
-img1.src = 'marcadagua1(short).jpg';
-img2.src = 'marcadagua2(short).jpg';
-
         }
-
-
 
 
 
